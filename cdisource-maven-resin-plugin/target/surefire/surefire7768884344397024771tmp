@@ -1,0 +1,5 @@
+#surefire
+#Fri Apr 08 10:25:47 PDT 2011
+user.dir=/Users/rick/dev/resin-maven-plugin/cdisource-maven-resin-plugin
+localRepository=/Users/rick/.m2/repository
+basedir=/Users/rick/dev/resin-maven-plugin/cdisource-maven-resin-plugin
