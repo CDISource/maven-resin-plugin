@@ -158,7 +158,24 @@ public abstract class AbstractWebRunnerMojo extends AbstractMojo {
 	protected String script = "org.cdisource.maven.resin/info.groovy";
 
 	protected String warName;
+
+	/**
+	 * <p>
+	 * Resin maven plugin is a series of maven scripts.
+	 * </p>
+	 * 
+	 * @parameter expression="${resin.fork}"
+	 *            default-value="true"
+	 */
 	protected boolean runFork=true;
+	/**
+	 * <p>
+	 * Resin maven plugin is a series of maven scripts.
+	 * </p>
+	 * 
+	 * @parameter expression="${resin.spawn}"
+	 *            default-value="false"
+	 */
 	protected boolean runSpawn=false;
 	
 	
@@ -389,10 +406,10 @@ public abstract class AbstractWebRunnerMojo extends AbstractMojo {
 		this.projectBuildDir = new File(this.project.getBuild().getDirectory());
 		this.projectBuildFinalName = this.project.getBuild().getFinalName();
 		this.projectBaseDir = this.project.getBasedir();
-		
+
 		String finalName = this.project.getBuild().getFinalName();
 		String artifactId = this.project.getArtifactId();
-		warName = finalName.startsWith(artifactId) ? artifactId : finalName;
+		warName = finalName.startsWith(artifactId) ? this.projectName : finalName;
 		if (this.contextPath==null || "".equals(contextPath.trim())) {
 			this.contextPath = "/" + warName;
 		}
