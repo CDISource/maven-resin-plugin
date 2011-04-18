@@ -19,7 +19,7 @@ public abstract class AbstractResinMojo extends AbstractWebRunnerMojo {
 	/**
 	 * The resin version that we will download and install.
 	 * 
-	 * @parameter expression="${resin.version}" default-value="4.0.16"
+	 * @parameter expression="${resin.version}" default-value="4.0.17"
 	 * @required
 	 */
 	protected String resinVersion;
