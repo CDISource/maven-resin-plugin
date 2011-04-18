@@ -124,7 +124,7 @@ public abstract class AbstractResinMojo extends AbstractWebRunnerMojo {
 
 	/**
 	   -debug-port <port>    : configure a debug port
-	 * @parameter expression="${resin.debugPort}" default-value="98761"
+	 * @parameter expression="${resin.debugPort}" default-value="8000"
 	 */
 	protected String resinDebugPort;
 

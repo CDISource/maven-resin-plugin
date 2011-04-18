@@ -1,9 +1,9 @@
 
-if (!this.hasProperty("plugin")) {
-   plugin = [:]
-   plugin.resinHome = new File("/Users/rick/tools/resin/resin-4.0.16/")
-
-}
+//Used for development, but somehow gets into the final stew, so commenting out
+//if (!this.hasProperty("plugin")) {
+//   plugin = [:]
+//   plugin.resinHome = new File("/Users/rick/tools/resin/resin-4.0.16/")
+//}
 
 def resinXML = new File(plugin.resinHome, "conf/resin.xml")
 println resinXML

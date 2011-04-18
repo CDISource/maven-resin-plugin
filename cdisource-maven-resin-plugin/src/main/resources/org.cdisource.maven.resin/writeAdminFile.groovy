@@ -1,11 +1,11 @@
 
-//This block is used for testing
+//This block is used for development
 // To run this for dev go to script folder and run groovy -classpath ../ writeAdminFile.groovy
 // The classpath must be set
-if (!this.hasProperty("plugin")) {
-   plugin = [:]
-   plugin.resinHome = new File("/Users/rick/tools/resin/resin-4.0.16/")
-}
+//if (!this.hasProperty("plugin")) {
+//   plugin = [:]
+//   plugin.resinHome = new File("/Users/rick/tools/resin/resin-4.0.16/")
+//}
 
 
 
